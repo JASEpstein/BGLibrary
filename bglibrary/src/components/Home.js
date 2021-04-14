@@ -5,6 +5,7 @@ class Home extends Component {
         return (
             <div>
                 <h2>HOME</h2>
+                <button onClick={this.props.auth.login}>Login</button>
             </div>
         );
     }
