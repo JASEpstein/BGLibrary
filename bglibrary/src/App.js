@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <>
-        < Nav />
+        <Nav auth={this.auth}/>
         <div className='body'>
           <Route path="/" exact render={ props => <Home auth={this.auth} {...props} />} />
           <Route path="/profile" component={Profile} />
